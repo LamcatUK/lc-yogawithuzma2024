@@ -1,0 +1,33 @@
+footer {
+    background-color: var(--col-black);
+    color: var(--col-white);
+    border-top-left-radius: var(--radius-lg);
+    border-top-right-radius: var(--radius-lg);
+
+    a {
+        color: var(--col-white);
+        &:hover {
+            color: var(--col-gold);
+            opacity: 1;
+        }
+    }
+
+    ul.menu {
+        list-style: none;
+        padding-inline-start: 0;
+    }
+    ul.fa-ul {
+        margin-left: 1.5rem;
+    }
+
+    .colophon {
+        font-size: var(--fs-300);
+        color: #ffffffcc;
+        a {
+            opacity: 0.8;
+        }
+        .container-xl {
+            border-top: 1px solid white;
+        }
+    }
+}

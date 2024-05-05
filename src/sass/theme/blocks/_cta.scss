@@ -1,0 +1,31 @@
+.cta {
+    &__card {
+        width: min(800px,100%);
+        margin-inline: auto;
+        padding: 2rem;
+        border-radius: var(--radius-lg);
+        position: relative;
+        isolation: isolate;
+        &.bg-purple-400 {
+            .cta__overlay {
+                background-image: url(../img/leaf-cta--purple.svg);
+            }
+        }
+        &.bg-teal-400 {
+            .cta__overlay {
+                background-image: url(../img/leaf-cta--teal.svg);
+            }
+        }
+    }
+    &__overlay {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        width: 100px;
+        height: 150px;
+        bottom: -0.5rem;
+        z-index: -1;
+    }
+
+}

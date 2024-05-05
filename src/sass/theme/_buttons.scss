@@ -1,0 +1,17 @@
+.btn {
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.btn-primary,
+.btn-outline-primary {
+    background-color: var(--col-coral);
+    color: var(--col-white);
+    font-weight: var(--fw-500);
+    transition: background-color var(--transition);
+    &:hover {
+        color: var(--col-white);
+        background-color: color-mix(in srgb, var(--col-coral), var(--col-black) 10%);
+    }
+    box-shadow: var(--shadow-1);
+}

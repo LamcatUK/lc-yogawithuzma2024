@@ -1,0 +1,41 @@
+.text_image {
+    border-radius: var(--radius-lg);
+    position: relative;
+    isolation: isolate;
+    
+    .text_image__overlay {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: min(500px,90vw);
+        height: 100%;
+        z-index: -1;
+    }
+    .text_image__overlay--right {
+        transform: scaleX(-1);
+        right: 0;
+    }
+    .text_image__overlay--left {
+        left: 0;
+    }
+
+    @media (max-width:991px) {
+        .text_image__overlay--right,
+        .text_image__overlay--left {
+            background-position: bottom;
+            bottom: 1rem;
+        }   
+    }
+
+    &.bg-purple-400 {
+        .text_image__overlay {
+            background-image: url(../img/leaf--purple.svg);
+        }
+    }
+    &.bg-teal-400 {
+        .text_image__overlay {
+            background-image: url(../img/leaf--teal.svg);
+        }
+    }
+
+}

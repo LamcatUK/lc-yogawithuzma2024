@@ -1,0 +1,23 @@
+header {
+
+    #wrapper-navbar {
+        transition: top var(--transition);
+    }
+    &.hidden {
+        #wrapper-navbar {
+            top: -91px;
+        }
+    }
+
+   #navbar {
+        background-color: var(--col-white);
+        border-bottom-left-radius: var(--radius-lg);
+        border-bottom-right-radius: var(--radius-lg);
+        a.nav-link {
+            font-family: var(--ff-body);
+            font-weight: var(--fw-500);
+            font-size: var(--fs-400);
+        }
+   }
+
+}
