@@ -154,6 +154,17 @@ function lc_dashboard_widget_display()
 <?php
 }
 
+// CF 7 select parameters
+// function get_url_param($atts)
+// {
+//     $value = '';
+//     if (isset($_GET[$atts['name']])) {
+//         $value = sanitize_text_field($_GET[$atts['name']]);
+//     }
+//     return $value;
+// }
+// add_shortcode('url_param', 'get_url_param');
+
 /*
 add_filter(
     'wpseo_breadcrumb_links',

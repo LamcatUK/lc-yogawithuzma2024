@@ -15,10 +15,12 @@
   --hsl-coral: 5 100% 69%;
   --col-coral: hsl( var(--hsl-coral) );
   --ff-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  --ff-headings: "Playfair Display", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --ff-headings: "Gentium Plus", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --fw-300: 300;
+  --fw-400: 400;
   --fw-500: 500;
   --fw-600: 600;
+  --fw-700: 700;
   --fw-800: 800;
   --fs-300: 14px;
   --fs-350: 16px;
@@ -22099,21 +22101,29 @@ readers do not read off random characters that represent icons */
   font-weight: 500;
   src: url("../fonts/inter-v13-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* playfair-display-500italic - latin */
+/* gentium-plus-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Playfair Display";
-  font-style: italic;
-  font-weight: 500;
-  src: url("../fonts/playfair-display-v37-latin-500italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-family: "Gentium Plus";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/gentium-plus-v2-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* playfair-display-800italic - latin */
+/* gentium-plus-italic - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Playfair Display";
+  font-family: "Gentium Plus";
   font-style: italic;
-  font-weight: 800;
-  src: url("../fonts/playfair-display-v37-latin-800italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-weight: 400;
+  src: url("../fonts/gentium-plus-v2-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* gentium-plus-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Gentium Plus";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/gentium-plus-v2-latin-700italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 html {
   font-size: 18px;
@@ -22134,17 +22144,20 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 h1, .h1 {
   font-size: var(--fs-800);
   line-height: var(--lh-900);
+  font-style: italic;
+  font-weight: var(--fw-700);
 }
 
 h2, .h2 {
   font-size: var(--fs-700);
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-400);
+  font-style: italic;
   line-height: var(--lh-800);
 }
 
 h3, .h3 {
   font-size: var(--fs-600);
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-400);
   line-height: var(--lh-700);
 }
 
@@ -22182,6 +22195,15 @@ strong {
 
 .fs-300 {
   font-size: var(--fs-300);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: balance;
+  text-wrap: pretty;
 }
 
 .bg-purple-400 {
@@ -22580,6 +22602,18 @@ body footer .gform_wrapper .gform_footer button {
 .all_testimonials__image {
   width: min(200px, 60vw) !important;
   margin-inline: auto;
+}
+
+.three_col .session_card {
+  padding: 1rem;
+  height: 100%;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-rows: 3rem max-content 1fr max-content auto 3rem;
+}
+.three_col .session_card .btn, .three_col .session_card .wpcf7 input[type=submit], .wpcf7 .three_col .session_card input[type=submit], .three_col .session_card body .gform_wrapper .gform_footer button, body .gform_wrapper .gform_footer .three_col .session_card button {
+  align-self: self-end;
+  justify-self: center;
 }
 
 body {
