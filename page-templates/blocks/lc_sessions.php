@@ -9,9 +9,9 @@
                 $l = get_sub_field('link');
                 $imgID = get_sub_field('image') ?? null;
                 if ($imgID) {
-                    $img = wp_get_attachment_image($imgID, 'full', false, array( 'class' => 'sessions__image w-100' ));
+                    $img = wp_get_attachment_image($imgID, 'full', false, array( 'class' => 'sessions__image' ));
                 } else {
-                    $img =  '<img src="' . get_stylesheet_directory_uri() . '/img/missing-image.png" class="sessions__image w-100">';
+                    $img =  '<img src="' . get_stylesheet_directory_uri() . '/img/missing-image.png" class="sessions__image">';
                 }
                 ?>
             <div class="col-md-6 col-xl-3">

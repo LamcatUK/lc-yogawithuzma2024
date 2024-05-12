@@ -22473,6 +22473,10 @@ body footer .gform_wrapper .gform_footer button {
 }
 .sessions__image {
   border-radius: var(--radius-lg);
+  width: 100%;
+  aspect-ratio: 4/3;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .sessions__title {
   position: absolute;

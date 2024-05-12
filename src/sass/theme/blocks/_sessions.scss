@@ -19,6 +19,9 @@
         // border-bottom-left-radius: var(--radius-sm);
         // border-bottom-right-radius: var(--radius-sm);
         border-radius: var(--radius-lg);
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
     }
     &__title {
         position: absolute;
