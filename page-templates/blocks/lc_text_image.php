@@ -31,7 +31,7 @@ switch ($colour) {
         break;
 }
 
-$img = wp_get_attachment_image(get_field('image'), 'full', false, array('class' => 'rounded-lg w-100 shadow-1')) ?: '<img src="' . get_stylesheet_directory_uri() . '/img/missing-image.png" class="rounded-lg">';
+$img = wp_get_attachment_image(get_field('image'), 'full', false, array('class' => 'rounded-lg w-100 shadow-1')) ?: '<img src="' . get_stylesheet_directory_uri() . '/img/placeholder-400x300.jpg" class="rounded-lg">';
 
 if ($colour == 'white') {
     ?>
