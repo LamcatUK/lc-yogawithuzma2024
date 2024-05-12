@@ -11,6 +11,8 @@ $colour = get_field('background') ?: 'white';
 $title = 'text-purple-400';
 $shadow = 'shadow-1';
 
+$class = $block['className'] ?? 'py-5';
+
 switch ($colour) {
     case 'white':
         $content = '';
@@ -48,7 +50,7 @@ if ($anchor) {
 ?>
 
 <section
-    class="text_image <?=$shadow?> py-5 bg-<?=$colour?>">
+    class="text_image <?=$shadow?> <?=$class?> bg-<?=$colour?>">
     <?php
     $overlay = get_field('overlay');
 if (is_array($overlay) && !empty($overlay) && $overlay[0] == 'Yes') {

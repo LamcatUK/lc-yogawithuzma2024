@@ -30,6 +30,9 @@ defined('ABSPATH') || exit;
     <link rel="preload"
         href="<?=get_stylesheet_directory_uri()?>/fonts/gentium-plus-v2-latin-italic.woff2"
         as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload"
+        href="<?=get_stylesheet_directory_uri()?>/fonts/gentium-plus-v2-latin-regular.woff2"
+        as="font" type="font/woff2" crossorigin="anonymous">
     <?php
     if (is_front_page()) {
         ?>
