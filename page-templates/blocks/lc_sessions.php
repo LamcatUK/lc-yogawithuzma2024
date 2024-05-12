@@ -11,7 +11,7 @@
                 if ($imgID) {
                     $img = wp_get_attachment_image($imgID, 'full', false, array( 'class' => 'sessions__image w-100' ));
                 } else {
-                    $img =  '<img src="' . get_stylesheet_directory_uri() . '/img/missing-image.png" class="sessions__image w-100>';
+                    $img =  '<img src="' . get_stylesheet_directory_uri() . '/img/missing-image.png" class="sessions__image w-100">';
                 }
                 ?>
             <div class="col-md-6 col-xl-3">
