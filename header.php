@@ -25,10 +25,10 @@ defined('ABSPATH') || exit;
         href="<?=get_stylesheet_directory_uri()?>/fonts/inter-v13-latin-600.woff2"
         as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload"
-        href="<?=get_stylesheet_directory_uri()?>/fonts/playfair-display-v37-latin-700italic.woff2"
+        href="<?=get_stylesheet_directory_uri()?>/fonts/gentium-plus-v2-latin-700italic.woff2"
         as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload"
-        href="<?=get_stylesheet_directory_uri()?>/fonts/playfair-display-v37-latin-800italic.woff2"
+        href="<?=get_stylesheet_directory_uri()?>/fonts/gentium-plus-v2-latin-italic.woff2"
         as="font" type="font/woff2" crossorigin="anonymous">
     <?php
     if (is_front_page()) {
