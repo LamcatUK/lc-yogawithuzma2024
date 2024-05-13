@@ -21,6 +21,26 @@
             "esc_html": 0
         },
         {
+            "key": "field_66426085a02d2",
+            "label": "Intro",
+            "name": "intro",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_66368a1bb2909",
             "label": "Form ID",
             "name": "form_id",
@@ -59,5 +79,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1714850341
+    "modified": 1715626125
 }

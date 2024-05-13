@@ -3,8 +3,8 @@
         <div class="row g-5 justify-content-center">
             <div class="col-md-6">
                 <h2 class="text-purple-400 h3">Get in touch</h2>
-                <div class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus repudiandae,
-                    cupiditate nemo cum officiis consectetur.</div>
+                <div class="mb-4">
+                    <?=get_field('intro')?></div>
                 <div class="mb-2"><i class="fa-solid fa-phone"></i>
                     <?=contact_phone()?>
                 </div>
