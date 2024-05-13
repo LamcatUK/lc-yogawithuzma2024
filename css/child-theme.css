@@ -22622,6 +22622,14 @@ body footer .gform_wrapper .gform_footer button {
   justify-self: center;
 }
 
+blockquote {
+  max-width: 80vw;
+  text-align: center;
+}
+blockquote p {
+  font-family: var(--ff-headings);
+}
+
 body {
   background-color: var(--col-white);
   color: var(--col-black);
