@@ -40,7 +40,7 @@ if (get_field('cta') ?? null) {
                     foreach (get_field('feature_images') as $f) {
                         ?>
                     <div class="carousel-item <?=$a?>">
-                        <?=wp_get_attachment_image($f, 'full', false, array( 'class' => 'd-block w-100' ));
+                        <?=wp_get_attachment_image($f, 'full', false, array( 'class' => 'd-block w-100 shadow-1' ));
                         ?>
                     </div>
                     <?php
