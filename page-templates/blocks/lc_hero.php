@@ -7,7 +7,7 @@ $img = wp_get_attachment_image_url(get_field('background'), 'full') ?? null;
     <div class="container-xl">
         <div class="row g-4">
             <div class="col-md-6 order-2 order-md-1 d-flex flex-column justify-content-center align-items-start">
-                <h1 class="mb-3">
+                <h1 class="mb-3 text-purple-400">
                     <?=get_field('title')?>
                 </h1>
                 <?php
