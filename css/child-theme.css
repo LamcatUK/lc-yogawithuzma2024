@@ -22211,6 +22211,7 @@ strong {
   color: var(--col-white);
 }
 
+.has-purple-400-color,
 .text-purple-400 {
   color: var(--col-purple-400);
 }
