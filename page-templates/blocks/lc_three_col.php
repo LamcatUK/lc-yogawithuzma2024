@@ -1,5 +1,8 @@
+<?php
+$class = $block['className'] ?? 'py-5';
+?>
 <section class="three_col">
-    <div class="container-xl py-5">
+    <div class="container-xl <?=$class?>">
         <div class="row g-4 justify-content-center">
             <?php
             while (have_rows('cards')) {
@@ -30,7 +33,7 @@
             </div>
             <?php
             }
-            ?>
+?>
         </div>
     </div>
 </section>
