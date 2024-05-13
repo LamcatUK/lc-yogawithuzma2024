@@ -22625,9 +22625,12 @@ body footer .gform_wrapper .gform_footer button {
 blockquote {
   max-width: 80vw;
   text-align: center;
+  margin-inline: auto;
 }
 blockquote p {
   font-family: var(--ff-headings);
+  font-size: var(--fs-500);
+  color: var(--col-purple-400);
 }
 
 body {
