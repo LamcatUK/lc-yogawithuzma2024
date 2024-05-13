@@ -26,6 +26,7 @@
   --fs-350: 16px;
   --fs-400: 18px;
   --fs-500: 22px;
+  --fs-550: 32px;
   --fs-600: 36px;
   --fs-700: 42px;
   --fs-800: 60px;
@@ -22626,10 +22627,11 @@ blockquote {
   max-width: 80vw;
   text-align: center;
   margin-inline: auto;
+  margin-top: 1rem;
 }
 blockquote p {
   font-family: var(--ff-headings);
-  font-size: var(--fs-500);
+  font-size: var(--fs-550);
   color: var(--col-purple-400);
 }
 
