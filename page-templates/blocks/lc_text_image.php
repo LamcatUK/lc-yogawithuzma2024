@@ -75,7 +75,7 @@ if (is_array($overlay) && !empty($overlay) && $overlay[0] == 'Yes') {
                 <?php
     if (get_field('title') ?? null) {
         ?>
-                <h2 class="d-none d-lg-block mb-4 <?=$title?>">
+                <h2 class="d-none d-lg-block <?=$title?>">
                     <?=get_field('title')?>
                 </h2>
                 <?php
@@ -95,7 +95,7 @@ if (get_field('link') ?? null) {
 ?>
             </div>
             <div
-                class="<?=$imgcolwidth?> <?=$imgcol?> d-flex align-items-center">
+                class="<?=$imgcolwidth?> <?=$imgcol?> d-flex align-items-center justify-content-center">
                 <?=$img?>
             </div>
         </div>
