@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   let lastScrollPosition = 0;
   const navbarHeight = 0; // Get the height of the navbar
-  const smallerScrollThreshold = 250; // Threshold for adding the .smaller class
+  const smallerScrollThreshold = 200; // Threshold for adding the .smaller class
 
   window.addEventListener('scroll', function() {
       const currentScroll = window.scrollY || document.documentElement.scrollTop;

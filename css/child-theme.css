@@ -22642,14 +22642,11 @@ blockquote p {
 body {
   background-color: var(--col-white);
   color: var(--col-black);
+  overflow-x: hidden;
 }
 
 .container-xl .container-xl {
   padding-inline: 0;
-}
-
-.container-xl > .row {
-  margin-inline: 0;
 }
 
 a {

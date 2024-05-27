@@ -6750,7 +6750,7 @@
 	document.addEventListener('DOMContentLoaded', function () {
 	  const navbar = document.getElementById('navholder');
 	  let lastScrollPosition = 0;
-	  const smallerScrollThreshold = 250; // Threshold for adding the .smaller class
+	  const smallerScrollThreshold = 200; // Threshold for adding the .smaller class
 
 	  window.addEventListener('scroll', function () {
 	    const currentScroll = window.scrollY || document.documentElement.scrollTop;

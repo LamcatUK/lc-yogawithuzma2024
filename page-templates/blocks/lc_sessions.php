@@ -2,7 +2,7 @@
 <section class="sessions bg-ivory py-5">
     <div class="container-xl">
         <h2 class="text-center text-purple-400 mb-4">Sessions with Uzma</h2>
-        <div class="row g-5">
+        <div class="row">
             <?php
             while (have_rows('sessions')) {
                 the_row();
@@ -14,7 +14,7 @@
                     $img =  '<img src="' . get_stylesheet_directory_uri() . '/img/placeholder-400x300.jpg" class="sessions__image">';
                 }
                 ?>
-            <div class="col-md-6 col-xl-3">
+            <div class="col-md-6 col-xl-3 mb-4">
                 <a class="sessions__card shadow-1"
                     href="<?=$l['url']?>">
                     <?=$img?>
