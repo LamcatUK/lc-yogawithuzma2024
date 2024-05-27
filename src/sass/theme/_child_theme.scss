@@ -23,6 +23,10 @@ body {
     padding-inline: 0;
 }
 
+.container-xl > .row {
+    margin-inline: 0;
+}
+
 a {
     transition: color var(--transition);
 }
