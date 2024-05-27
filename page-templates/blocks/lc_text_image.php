@@ -69,9 +69,9 @@ if (is_array($overlay) && !empty($overlay) && $overlay[0] == 'Yes') {
         <?php
         }
 ?>
-        <div class="row g-5">
+        <div class="row">
             <div
-                class="<?=$txtcolwidth?> d-flex flex-column justify-content-center align-items-start <?=$txtcol?>">
+                class="<?=$txtcolwidth?> d-flex flex-column justify-content-center align-items-start mb-4 <?=$txtcol?>">
                 <?php
     if (get_field('title') ?? null) {
         ?>
@@ -95,7 +95,7 @@ if (get_field('link') ?? null) {
 ?>
             </div>
             <div
-                class="<?=$imgcolwidth?> <?=$imgcol?> d-flex align-items-center justify-content-center">
+                class="<?=$imgcolwidth?> <?=$imgcol?> mb-4 d-flex align-items-center justify-content-center">
                 <?=$img?>
             </div>
         </div>

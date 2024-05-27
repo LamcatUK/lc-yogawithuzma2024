@@ -46,7 +46,8 @@ $col-grey: #FFF0F0;
     --fs-600: 32px;
     --fs-700: 42px;
     --fs-800: 60px;
-    --fs-900: 80px;
+    // --fs-900: 80px;
+    --fs-900: clamp(3.333rem, 2.475vw + 2.797rem, 4.722rem);
 
     --lh-normal: 1.5;
     --lh-700: 1.3;
