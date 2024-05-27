@@ -11,8 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   window.addEventListener('scroll', function() {
       const currentScroll = window.scrollY || document.documentElement.scrollTop;
-  
-      if (currentScroll > navbarHeight) {
+
+      if (currentScroll > smallerScrollThreshold) {
+          // Add .smaller class if scrolled more than the threshold
+          navbar.classList.add('smaller');
+
           if (currentScroll > lastScrollPosition) {
               // Down scroll
               navbar.classList.add('hidden');
@@ -20,18 +23,15 @@ document.addEventListener('DOMContentLoaded', function() {
               // Up scroll
               navbar.classList.remove('hidden');
           }
-      }
-  
-      if (currentScroll > smallerScrollThreshold) {
-          navbar.classList.add('smaller');
       } else {
+          // Remove .smaller class if scrolled less than the threshold
           navbar.classList.remove('smaller');
       }
 
       lastScrollPosition = currentScroll <= 0 ? 0 : currentScroll;
   });
-
 });
+
 
 
 // document.addEventListener('DOMContentLoaded', function() {
