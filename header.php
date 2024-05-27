@@ -102,7 +102,7 @@ do_action('wp_body_open');
     <header class="navholder" id="navholder">
         <div id="wrapper-navbar" class="fixed-top">
             <nav id="navbar" class="navbar navbar-expand-lg shadow-1" aria-labelledby="main-nav-label">
-                <div class="container-xl gap-2">
+                <div class="container-xl">
                     <a href="/" class="logo"><img
                             src="<?=get_stylesheet_directory_uri()?>/img/ywu-logo.svg"
                             width=146 height=81 alt="Home"></a>

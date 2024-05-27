@@ -2,6 +2,7 @@ header {
 
     #wrapper-navbar {
         transition: top var(--transition);
+        max-width: 100vw;
     }
     &.hidden {
         #wrapper-navbar {
