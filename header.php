@@ -102,8 +102,8 @@ do_action('wp_body_open');
     <header class="navholder" id="navholder">
         <div id="wrapper-navbar" class="fixed-top">
             <nav id="navbar" class="navbar navbar-expand-lg shadow-1" aria-labelledby="main-nav-label">
-                <div class="container-xl">
-                    <a href="/"><img
+                <div class="container-xl gap-2">
+                    <a href="/" class="logo"><img
                             src="<?=get_stylesheet_directory_uri()?>/img/ywu-logo.svg"
                             width=146 height=81 alt="Home"></a>
                     <button class="navbar-toggler input-button" id="navToggle" data-bs-toggle="collapse"
@@ -115,7 +115,7 @@ wp_nav_menu(
                                 'theme_location'  => 'primary_nav',
                                 'container_class' => 'collapse navbar-collapse navbars',
                                 'container_id'    => 'primaryNav',
-                                'menu_class'      => 'navbar-nav w-100 justify-content-around gap-lg-4',
+                                'menu_class'      => 'navbar-nav w-100 justify-content-around align-items-center gap-lg-4',
                                 'fallback_cb'     => '',
                                 'menu_id'         => 'main-menu',
                                 'depth'           => 2,

@@ -5,7 +5,22 @@ header {
     }
     &.hidden {
         #wrapper-navbar {
-            top: -91px;
+            top: -100px;
+        }
+    }
+    &.smaller {
+        .logo {
+            img {
+                width: 147px;
+            }
+        }
+    }
+
+
+    .logo {
+        img {
+            transition: width var(--transition);
+            width: 200px;
         }
     }
 
@@ -13,6 +28,9 @@ header {
         background-color: var(--col-white);
         border-bottom-left-radius: var(--radius-lg);
         border-bottom-right-radius: var(--radius-lg);
+        li.nav-item {
+            text-align: center;
+        }
         a.nav-link {
             font-family: var(--ff-body);
             font-weight: var(--fw-500);

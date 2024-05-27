@@ -3,25 +3,12 @@
 // const lightbox = GLightbox();
 
 document.addEventListener('DOMContentLoaded', function() {
-//   const navLinks = document.querySelectorAll('.nav-link');
-//   const navbarCollapse = document.querySelector('.navbar-collapse');
   const navbar = document.getElementById('navholder');
-//   navLinks.forEach(link => {
-//       link.addEventListener('click', function() {
-//           if (navbarCollapse.classList.contains('show')) {
-//               // Check if the menu is open and close it
-//               navbarCollapse.classList.remove('show');
-//               navbar.classList.add('hidden');
-//           }
-//       });
-//   });
 
-  // hide beyond height of navbar (--h-top)
   let lastScrollPosition = 0;
-  // const navbar = document.getElementById('wrapper-navbar');
-  // const navbarHeight = navbar.clientHeight; // Get the height of the navbar
   const navbarHeight = 0; // Get the height of the navbar
-  
+  const smallerScrollThreshold = 150; // Threshold for adding the .smaller class
+
   window.addEventListener('scroll', function() {
       const currentScroll = window.scrollY || document.documentElement.scrollTop;
   
@@ -35,10 +22,41 @@ document.addEventListener('DOMContentLoaded', function() {
           }
       }
   
+      if (currentScroll > smallerScrollThreshold) {
+          navbar.classList.add('smaller');
+      } else {
+          navbar.classList.remove('smaller');
+      }
+
       lastScrollPosition = currentScroll <= 0 ? 0 : currentScroll;
   });
 
 });
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   const navbar = document.getElementById('navholder');
+
+//   let lastScrollPosition = 0;
+//   const navbarHeight = 0; // Get the height of the navbar
+  
+//   window.addEventListener('scroll', function() {
+//       const currentScroll = window.scrollY || document.documentElement.scrollTop;
+  
+//       if (currentScroll > navbarHeight) {
+//           if (currentScroll > lastScrollPosition) {
+//               // Down scroll
+//               navbar.classList.add('hidden');
+//           } else {
+//               // Up scroll
+//               navbar.classList.remove('hidden');
+//           }
+//       }
+  
+//       lastScrollPosition = currentScroll <= 0 ? 0 : currentScroll;
+//   });
+
+// });
 
 // (function(){
 //     // hide header on scroll

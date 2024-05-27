@@ -5,13 +5,13 @@
 
 .btn-primary,
 .btn-outline-primary {
-    background-color: var(--col-coral);
+    background-color: var(--col-pink-400);
     color: var(--col-white);
     font-weight: var(--fw-500);
     transition: background-color var(--transition);
     &:hover {
         color: var(--col-white);
-        background-color: color-mix(in srgb, var(--col-coral), var(--col-black) 10%);
+        background-color: color-mix(in srgb, var(--col-pink-400), var(--col-black) 10%);
     }
     box-shadow: var(--shadow-1);
 }
