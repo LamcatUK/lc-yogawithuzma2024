@@ -2,7 +2,7 @@
     <div class="container-xl">
         <div class="row g-5 justify-content-center">
             <div class="col-md-6">
-                <h2 class="text-purple-400 h3">Get in touch</h2>
+                <h2 class="text-purple-400">Get in touch</h2>
                 <div class="mb-4">
                     <?=get_field('intro')?></div>
                 <div class="mb-2"><i class="fa-solid fa-phone"></i>
@@ -11,11 +11,11 @@
                 <div class="mb-4"><i class="fa-solid fa-paper-plane"></i>
                     <?=contact_email()?>
                 </div>
-                <div class="h4 text-purple-400">Connect</div>
+                <h3 class="text-purple-400">Connect</h3>
                 <div class="fs-500"><?=social_icons_inline()?></div>
             </div>
             <div class="col-md-6">
-                <h2 class="h3 text-purple-400 mb-4">Send me a message</h2>
+                <h2 class="text-purple-400 mb-4">Send me a message</h2>
                 <?=do_shortcode('[contact-form-7 id="' . get_field('form_id') . '"]')?>
             </div>
         </div>
