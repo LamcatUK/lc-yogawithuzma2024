@@ -15,15 +15,13 @@
                 <div class="fs-500"><?=social_icons_inline()?></div>
             </div>
             <div class="col-md-6">
-                <iframe
-                    src="<?=get_field('maps_url', 'options')?>"
-                    width="100%" height="450" class="rounded-lg shadow-1" style="border:0;" allowfullscreen=""
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="col-md-6">
-                <h2 class="h3 text-center text-purple-400 mb-4">Send me a message</h2>
+                <h2 class="h3 text-purple-400 mb-4">Send me a message</h2>
                 <?=do_shortcode('[contact-form-7 id="' . get_field('form_id') . '"]')?>
             </div>
         </div>
     </div>
+    <iframe
+            src="<?=get_field('maps_url', 'options')?>"
+            width="100%" height="450" class="rounded-lg shadow-1" style="border:0;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
