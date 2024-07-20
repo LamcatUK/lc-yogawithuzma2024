@@ -81,7 +81,7 @@ if (is_array($overlay) && !empty($overlay) && $overlay[0] == 'Yes') {
                 <?php
     }
 ?>
-                <div><?=get_field('content')?>
+                <div><?=the_field('content')?>
                 </div>
                 <?php
 if (get_field('link') ?? null) {
