@@ -25,6 +25,9 @@
         // }
     }
 
+    &__link {
+        color: var(--col-black);
+    }
     &__image {
         width: min(300px,60vw) !important;
         margin-inline: auto;

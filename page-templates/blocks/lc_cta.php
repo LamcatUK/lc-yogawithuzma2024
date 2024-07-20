@@ -33,7 +33,7 @@ switch ($colour) {
             <h2 class="mb-3">
                 <?=get_field('title')?>
             </h2>
-            <div class="fs-500 mb-2"><i class="fa-solid fa-phone"></i>
+            <div class="fs-500 mb-2 <?=$title?>"><i class="fa-solid fa-phone"></i>
                 <?=contact_phone()?>
             </div>
             <div class="fs-500 mb-3"><i class="fa-solid fa-paper-plane"></i>

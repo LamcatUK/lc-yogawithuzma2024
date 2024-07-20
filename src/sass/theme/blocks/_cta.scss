@@ -16,6 +16,14 @@
                 background-image: url(../img/leaf-cta--teal.svg);
             }
         }
+        a {
+            color: inherit !important;
+            font-weight: normal !important;
+            transition: opacity var(--transition);
+            &:hover {
+                opacity: 0.5;
+            }
+        }
     }
     &__overlay {
         position: absolute;

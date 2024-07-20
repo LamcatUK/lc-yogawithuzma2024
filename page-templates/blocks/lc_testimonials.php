@@ -16,7 +16,8 @@
                     ?>
                 <div class="carousel-item <?=$a?>">
                     <a
-                        href="/testimonials/#<?=acf_slugify(get_the_title())?>">
+                        href="/testimonials/#<?=acf_slugify(get_the_title())?>"
+                        class="testimonials__link">
                         <div class="testimonials__words">
                             <div class="testimonials__content">
                                 <?=get_the_content()?>

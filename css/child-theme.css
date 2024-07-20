@@ -22507,6 +22507,14 @@ body footer .gform_wrapper .gform_footer button {
 .cta__card.bg-teal-400 .cta__overlay {
   background-image: url(../img/leaf-cta--teal.svg);
 }
+.cta__card a {
+  color: inherit !important;
+  font-weight: normal !important;
+  transition: opacity var(--transition);
+}
+.cta__card a:hover {
+  opacity: 0.5;
+}
 .cta__overlay {
   position: absolute;
   background-repeat: no-repeat;
@@ -22538,6 +22546,9 @@ body footer .gform_wrapper .gform_footer button {
   overflow: hidden;
   width: 100%;
   height: 250px;
+}
+.testimonials__link {
+  color: var(--col-black);
 }
 .testimonials__image {
   width: min(300px, 60vw) !important;
