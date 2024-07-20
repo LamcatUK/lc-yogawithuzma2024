@@ -27,5 +27,8 @@
             }
             ?>
         </div>
+        <div class="text-center">
+            <a href="/yoga-sessions/" target="" class="btn btn-primary">Yoga Sessions</a>
+        </div>
     </div>
 </section>
