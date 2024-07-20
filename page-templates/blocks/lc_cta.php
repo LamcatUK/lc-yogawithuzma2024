@@ -36,9 +36,10 @@ switch ($colour) {
             <div class="fs-500 mb-2"><i class="fa-solid fa-phone"></i>
                 <?=contact_phone()?>
             </div>
-            <div class="fs-500"><i class="fa-solid fa-paper-plane"></i>
+            <div class="fs-500 mb-3"><i class="fa-solid fa-paper-plane"></i>
                 <?=contact_email()?>
             </div>
+            <a href="/contact-me/?subject=<?=get_field('subject')?>" class="btn btn-primary">Get in touch</a>
         </div>
 </section>
 <div class="buffer-bottom bg-<?=$bgcolour?>"></div>
