@@ -20,10 +20,16 @@ $class = $block['className'] ?? 'py-5';
                     <div class="text-center text-pretty align-self-center">
                         <?=get_sub_field('address')?>
                     </div>
+                    <?php
+                    if (get_sub_field('directions') ?? null) {
+                        ?>
                     <div class="text-center fs-300">
                         <a href="<?=get_sub_field('directions')?>"
                             target="_blank"><i class="fa-solid fa-map-marker-alt"></i> Get Directions</a>
                     </div>
+                        <?php
+                    }
+                    ?>
                     <div class="text-center fw-500 text-purple-400">
                         <?=get_sub_field('pricing')?>
                     </div>
