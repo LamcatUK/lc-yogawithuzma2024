@@ -1,7 +1,7 @@
 <div class="buffer-top bg-ivory"></div>
 <section class="sessions bg-ivory py-5">
     <div class="container-xl">
-        <h2 class="text-center text-purple-400 mb-4">Sessions with Uzma</h2>
+        <h2 class="text-center text-purple-400 mb-4">Yoga Sessions with Uzma</h2>
         <div class="row">
             <?php
             while (have_rows('sessions')) {
