@@ -29,6 +29,9 @@ $class = $block['className'] ?? 'py-5';
                     </div>
                         <?php
                     }
+                    else {
+                        echo '<div></div>';
+                    }
                     ?>
                     <div class="text-center fw-500 text-purple-400">
                         <?=get_sub_field('pricing')?>
