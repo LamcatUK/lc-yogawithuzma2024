@@ -1,8 +1,5 @@
 .hero {
     min-height: 500px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
     isolation: isolate;
     display: flex;
@@ -12,6 +9,18 @@
     padding-bottom: 3rem;
     border-bottom-left-radius: var(--radius-lg);
     border-bottom-right-radius: var(--radius-lg);
+    overflow: hidden;
+
+    &__bg {
+        position: absolute;
+        inset: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        filter: grayscale(1) opacity(0.25);
+        mix-blend-mode: overlay;
+    }
 
     h1 {
         font-size: var(--fs-900);

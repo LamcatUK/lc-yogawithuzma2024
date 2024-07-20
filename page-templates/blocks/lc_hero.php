@@ -1,9 +1,5 @@
-<?php
-$img = wp_get_attachment_image_url(get_field('background'), 'full') ?? null;
-?>
-<link rel="preload" href="<?=$img?>" as="image">
-<section class="hero shadow-1"
-    style="background-image:url(<?=$img?>)">
+<section class="hero shadow-1">
+    <?=wp_get_attachment_image(get_field('background'), 'full', false, array('class' => 'hero__bg')) ?? null?>
     <div class="container-xl">
         <div class="row g-4">
             <div class="col-md-6 order-2 order-md-1 d-flex flex-column justify-content-center align-items-start">
