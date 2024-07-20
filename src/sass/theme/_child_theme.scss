@@ -29,9 +29,10 @@ a {
 }
 
 main a:not([class]) {
-    color: var(--col-blue-400);
+    color: var(--col-purple-400);
+    font-weight: var(--fw-600);
     &:hover {
-        color: var(--col-blue-900);
+        color: var(--col-purple-900);
     }
 }
 
