@@ -2,7 +2,7 @@
 <section class="sessions bg-ivory py-5">
     <div class="container-xl">
         <h2 class="text-center text-purple-400 mb-4">Yoga Sessions with Uzma</h2>
-        <div class="row">
+        <div class="row mb-4">
             <?php
             while (have_rows('sessions')) {
                 the_row();
@@ -28,7 +28,7 @@
             ?>
         </div>
         <div class="text-center">
-            <a href="/yoga-sessions/" target="" class="btn btn-primary">Yoga Sessions</a>
+            <a href="/yoga-sessions/" target="" class="btn btn-primary">All Yoga Sessions</a>
         </div>
     </div>
 </section>
