@@ -2,7 +2,7 @@
     <div class="testimonials__overlay"></div>
     <div class="container-xl">
         <h2 class="text-center mb-4 text-purple-400">Testimonials</h2>
-        <div class="testimonials__carousel carousel slide carousel-fade w-lg-75 mx-auto" data-bs-ride="carousel">
+        <div class="testimonials__carousel carousel slide carousel-fade w-lg-75 mx-auto" data-bs-ride="carousel" data-bs-interval="7000">
             <div class="carousel-inner pb-4">
                 <?php
 

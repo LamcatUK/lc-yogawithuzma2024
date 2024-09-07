@@ -25,7 +25,7 @@ header {
         }
     }
 
-   #navbar {
+    #navbar {
         background-color: var(--col-white);
         border-bottom-left-radius: var(--radius-lg);
         border-bottom-right-radius: var(--radius-lg);
@@ -37,6 +37,13 @@ header {
             font-weight: var(--fw-500);
             font-size: var(--fs-400);
         }
-   }
+    }
+
+    .dropdown-menu li.nav-item a.dropdown-item {
+        text-align: start;
+        &:active {
+            background-color: var(--col-pink-400);
+        }
+    }
 
 }

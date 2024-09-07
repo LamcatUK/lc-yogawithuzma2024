@@ -22260,6 +22260,12 @@ header #navbar a.nav-link {
   font-weight: var(--fw-500);
   font-size: var(--fs-400);
 }
+header .dropdown-menu li.nav-item a.dropdown-item {
+  text-align: start;
+}
+header .dropdown-menu li.nav-item a.dropdown-item:active {
+  background-color: var(--col-pink-400);
+}
 
 footer {
   background-color: var(--col-black);
@@ -22631,15 +22637,16 @@ body footer .gform_wrapper .gform_footer button {
 }
 
 .three_col .session_card {
-  padding: 1rem;
-  height: 100%;
   display: grid;
-  gap: 0.5rem;
-  grid-template-rows: 3rem max-content 1fr max-content auto 3rem;
+  grid-template-rows: repeat(5, minmax(3rem, auto));
+  padding: 10px;
+  gap: 5px;
 }
-.three_col .session_card .btn, .three_col .session_card .wpcf7 input[type=submit], .wpcf7 .three_col .session_card input[type=submit], .three_col .session_card body .gform_wrapper .gform_footer button, body .gform_wrapper .gform_footer .three_col .session_card button {
-  align-self: self-end;
-  justify-self: center;
+.three_col .session_card > div, .three_col .session_card > a {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  padding: 5px;
 }
 
 .separator .container-xl {

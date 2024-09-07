@@ -1,3 +1,6 @@
+<?php
+/* SESSIONS NAV */
+?>
 <div class="buffer-top bg-ivory"></div>
 <section class="sessions bg-ivory py-5">
     <div class="container-xl">
@@ -28,7 +31,7 @@
             ?>
         </div>
         <div class="text-center">
-            <a href="/yoga-sessions/" target="" class="btn btn-primary">All Yoga Sessions</a>
+            <a href="/yoga-classes/" target="" class="btn btn-primary">All Yoga Sessions</a>
         </div>
     </div>
 </section>

@@ -1,13 +1,18 @@
 .three_col {
+
     .session_card {
-        padding: 1rem;
-        height: 100%;
         display: grid;
-        gap: 0.5rem;
-        grid-template-rows: 3rem max-content 1fr max-content auto 3rem;
-        .btn {
-            align-self: self-end;
-            justify-self: center;
-        }
+        grid-template-rows: repeat(5, minmax(3rem,auto));
+        padding: 10px;
+        gap: 5px;
     }
+    
+    .session_card > div, .session_card > a {
+        display: flex;
+        align-items: center; /* Vertically center the content */
+        justify-content: center; /* Horizontally center the content */
+        padding: 5px;
+    }
+    
+
 }
