@@ -22299,6 +22299,122 @@ footer .colophon .container-xl {
   border-top: 1px solid white;
 }
 
+.blog .breadcrumbs {
+  display: none;
+}
+
+.news__card {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .news__card {
+    grid-template-columns: 250px auto;
+  }
+}
+.news__img {
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.news__meta {
+  margin-bottom: 0.25rem;
+}
+.news h3, .news .h3 {
+  transition: color var(--transition);
+}
+.news a {
+  color: var(--col-black);
+}
+.news a:hover h3, .news a:hover .h3 {
+  color: var(--col-purple-400);
+}
+
+.blog {
+  margin-top: 5rem;
+}
+.blog__image {
+  border-radius: 0.5rem;
+}
+
+.navigation {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.25rem;
+}
+.navigation ul {
+  list-style: none;
+  display: flex;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+}
+.navigation li {
+  border: 1px solid var(--col-green-400);
+  border-right: none;
+  background-color: white;
+}
+.navigation li.active {
+  background-color: var(--col-blue-400);
+}
+.navigation li.active a {
+  cursor: default;
+  font-weight: 600;
+}
+.navigation li:first-of-type {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+.navigation li:last-of-type {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  border-right: 1px solid var(--col-green-400);
+}
+.navigation a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem 1rem;
+}
+
+.related__card {
+  text-decoration: none;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  color: var(--col-black);
+  border-bottom: 1px solid hsl(var(--hsl-purple-400)/0.5);
+}
+.related__card:hover .related__image {
+  transform: scale(1.05);
+}
+.related__image {
+  aspect-ratio: 16/9;
+  width: 100%;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  transition: transform 300ms ease;
+  margin-bottom: 0.5rem;
+}
+
+.blog__image {
+  aspect-ratio: 16/9;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  transition: transform 300ms ease;
+  margin-bottom: 0.5rem;
+}
+.blog__content > .container-xl {
+  padding-inline: 0;
+}
+
 .form-control, .wpcf7 .wpcf7-validation-errors, .wpcf7 input[type=text],
 .wpcf7 input[type=search],
 .wpcf7 input[type=url],

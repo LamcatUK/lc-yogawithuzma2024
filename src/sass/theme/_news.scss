@@ -1,19 +1,44 @@
-.news_index {
-    display: grid;
-    --col-count: 1;
-    @media (min-width: 576px) {
-        --col-count: 2;
-    }
-    @media (min-width: 992px) {
-        --col-count: 3;
-    }
-    grid-template-columns: repeat(var(--col-count), 1fr);
-    gap: 1rem;
-    
+.blog .breadcrumbs {
+    display: none;
+}
+.news {
+
+
     &__card {
-        height: 100%;
+        display: grid;
+        gap: 1rem;
+        @media (min-width:768px) {
+            grid-template-columns: 250px auto;
+        }
+        margin-bottom: 2rem;
     }
 
+    &__img {
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+    &__meta {
+        margin-bottom: 0.25rem;
+    }
+    h3 {
+        transition: color var(--transition);
+    }
+    a {
+        color: var(--col-black);
+        &:hover {
+            h3 {
+                color: var(--col-purple-400);
+            }
+        }
+    }
+}
+
+.blog {
+    margin-top: 5rem;
+    &__image {
+        border-radius: 0.5rem;
+    }
 }
 
 .navigation {
@@ -62,36 +87,23 @@
         text-decoration: none;
         display: grid;
         grid-template-rows: auto 1fr;
+        color: var(--col-black);
         &:hover {
             .related__image {
                 transform: scale(1.05);
             }
         }
+        border-bottom: 1px solid hsl(var(--hsl-purple-400) / 0.5);
     }
-    &__image_container {
-        overflow: hidden;   
-    }
+
     &__image {
         aspect-ratio: 16 / 9;
         width: 100%;
+        border-radius: 0.5rem;
         object-fit: cover;
         object-position: center;
         transition: transform 300ms ease;
-    }
-    &__content {
-        background-color: white;
-        color: var(--col-green-deep);
-        padding: 0.5rem;
-        min-height: 4rem;
-        display: grid;
-        grid-template-rows: 1fr auto;
-        height: 100%;
-    }
-    &__title {
-        font-size: var(--fs-700);
-    }
-    &__date {
-        font-size: var(--fs-300);
+        margin-bottom: 0.5rem;
     }
 }
 
