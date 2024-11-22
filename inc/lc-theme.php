@@ -211,6 +211,14 @@ function wpdocs_remove_shortcode_from_index($content)
     return $content;
 }
 
+add_action('admin_head', function () {
+    echo '<style>
+   .block-editor-page #wpwrap {
+       overflow-y: auto !important;
+   }
+   </style>';
+});
+
 function lc_theme_enqueue()
 {
     $the_theme = wp_get_theme();
