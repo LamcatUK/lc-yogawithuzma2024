@@ -1,18 +1,23 @@
 .bg-purple-400 {
-    background-color: var(--col-purple-400);
-    color: var(--col-white);
+  background-color: var(--col-purple-400);
+  color: var(--col-white);
 }
 .has-purple-400-color,
 .text-purple-400 {
-    color: var(--col-purple-400);
+  color: var(--col-purple-400);
 }
 
 .bg-teal-400 {
-    background-color: var(--col-teal-400);
-    color: var(--col-white);
+  background-color: var(--col-teal-400);
+  color: var(--col-white);
 }
 
 .has-ivory-background-color,
 .bg-ivory {
-    background-color: var(--col-ivory);
+  background-color: var(--col-ivory);
+}
+
+.has-teal-200-background-color,
+.bg-teal-200 {
+  background-color: var(--col-teal-200);
 }
