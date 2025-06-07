@@ -1,3 +1,27 @@
+<?php
+
+$type = get_field( 'speciality' );
+
+$term_slugs = array();
+
+$args = array(
+    'post_type'      => 'testimonial',
+    'posts_per_page' => -1,
+);
+
+
+if ( is_array( $type ) && ! empty( $type ) ) {
+    $args['tax_query'] = array(
+        array(
+            'taxonomy' => 'speciality',
+            'field'    => 'term_id',
+            'terms'    => $type,
+        ),
+    );
+}
+
+$q = new WP_Query( $args );
+?>
 <section class="testimonials py-5">
     <div class="testimonials__overlay"></div>
     <div class="container-xl">
@@ -6,17 +30,14 @@
             <div class="carousel-inner pb-4">
                 <?php
 
-            $q = new WP_Query(array(
-                'post_type' => 'testimonial',
-                'posts_per_page' => -1
-            ));
                 $a = 'active';
+
                 while ($q->have_posts()) {
                     $q->the_post();
                     ?>
                 <div class="carousel-item <?=$a?>">
                     <a
-                        href="/testimonials/#<?=acf_slugify(get_the_title())?>"
+                        href="/testimonials/#<?= acf_slugify( get_the_title() ); ?>"
                         class="testimonials__link">
                         <div class="testimonials__words">
                             <div class="testimonials__content">
