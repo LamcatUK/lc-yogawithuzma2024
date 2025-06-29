@@ -22210,6 +22210,14 @@ strong {
   text-wrap: pretty;
 }
 
+.ff-heading {
+  font-family: var(--ff-headings);
+}
+
+.ff-body {
+  font-family: var(--ff-body);
+}
+
 .bg-purple-400 {
   background-color: var(--col-purple-400);
   color: var(--col-white);
