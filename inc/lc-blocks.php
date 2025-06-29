@@ -160,7 +160,19 @@ function core_image_block_type_args($args, $name)
 function modify_core_add_container($attributes, $content)
 {
     ob_start();
-    // $class = $block['className'];
+    
+    // Check if this is a list block with fa-list class
+    if ( isset( $attributes['className'] ) && strpos( $attributes['className'], 'fa-list' ) !== false ) {
+        // Extract icon class if specified (e.g., fa-list fa-check becomes fa-check)
+        $icon_class = 'fa-check'; // default icon
+        if ( preg_match( '/fa-list\s+(fa-[\w-]+)/', $attributes['className'], $matches ) ) {
+            $icon_class = $matches[1];
+        }
+        
+        // Convert to FontAwesome list
+        $content = convert_to_fa_list( $content, $icon_class );
+    }
+    
     ?>
 <div class="container-xl">
     <?=$content?>

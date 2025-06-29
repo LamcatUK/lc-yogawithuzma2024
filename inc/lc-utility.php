@@ -437,4 +437,31 @@ function pluralise($quantity, $singular, $plural=null)
             return $singular.'s';
     }
 }
+
+/**
+ * Convert a regular list to FontAwesome list format
+ *
+ * @param string $content The HTML content containing the list
+ * @param string $icon_class The FontAwesome icon class to use (default: fa-check)
+ * @return string The converted HTML with FontAwesome list structure
+ */
+function convert_to_fa_list( $content, $icon_class = 'fa-check' ) {
+    // Replace ul class with fa-ul and remove the icon class from ul
+    $content = preg_replace( '/class="wp-block-list([^"]*)"/', 'class="fa-ul$1"', $content );
+    
+    // Remove fa-list trigger class from the ul class attribute
+    $content = preg_replace( '/class="fa-ul([^"]*)\s+fa-list([^"]*)"/', 'class="fa-ul$1$2"', $content );
+    
+    // Remove the icon class from the ul class attribute (e.g., remove fa-star from fa-ul fa-star)
+    $content = preg_replace( '/class="fa-ul([^"]*)\s+' . preg_quote( $icon_class, '/' ) . '([^"]*)"/', 'class="fa-ul$1$2"', $content );
+    
+    // Clean up any double spaces in class attribute
+    $content = preg_replace( '/class="([^"]*)\s+([^"]*)"/', 'class="$1 $2"', $content );
+    $content = preg_replace( '/class="([^"]*)\s\s+([^"]*)"/', 'class="$1 $2"', $content );
+    
+    // Add fa-li icon to each list item
+    $content = preg_replace( '/<li>/', '<li><span class="fa-li"><i class="fa-solid ' . $icon_class . '"></i></span>', $content );
+    
+    return $content;
+}
 ?>
