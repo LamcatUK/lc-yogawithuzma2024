@@ -47,10 +47,13 @@ function acf_blocks()
                 'icon'            => 'cover-image',
                 'render_template' => 'page-templates/blocks/lc_hero.php',
                 'mode'            => 'edit',
-                'supports'        => array( 'mode' => false ),
+                'supports'        => array( 
+                    'mode' => false,
+                    'className' => true,
+                ),
             )
         );
-        
+
         acf_register_block_type(array(
             'name'				=> 'lc_text_image',
             'title'				=> __('LC Text / Image'),

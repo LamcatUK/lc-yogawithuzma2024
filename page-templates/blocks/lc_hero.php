@@ -1,5 +1,6 @@
 <?php
-$shadow = ( strpos( $block['class'], 'no-shadow' ) !== false ) ? '' : 'shadow-1';
+$shadow = ( strpos( $block['className'], 'no-shadow' ) !== false ) ? '' : 'shadow-1';
+
 
 ?>
 
