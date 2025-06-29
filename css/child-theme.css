@@ -22229,6 +22229,13 @@ strong {
   background-color: var(--col-teal-200);
 }
 
+.has-purple-400-background-color {
+  background-color: var(--col-purple-400);
+}
+.has-purple-400-background-color a {
+  color: white;
+}
+
 .btn, .wpcf7 input[type=submit], body footer .gform_wrapper .gform_footer button, body .gform_wrapper .gform_footer button {
   padding: 0.5rem 2rem;
   border-radius: 0.5rem;

@@ -21,3 +21,10 @@
 .bg-teal-200 {
   background-color: var(--col-teal-200);
 }
+
+.has-purple-400-background-color {
+  background-color: var(--col-purple-400);
+  a {
+    color: white;
+  }
+}
