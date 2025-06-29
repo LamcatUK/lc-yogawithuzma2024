@@ -22812,6 +22812,30 @@ blockquote p {
   color: var(--col-purple-400);
 }
 
+.four_cards__card {
+  padding: 1rem;
+  border-radius: var(--border-sm);
+  box-shadow: var(--shadow-1);
+  background-color: var(--col-ivory);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.four_cards__lead {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-500);
+}
+.four_cards__content {
+  text-align: center;
+}
+.four_cards__attr {
+  margin-top: auto;
+  text-align: center;
+  font-size: var(--fs-300);
+}
+
 body {
   background-color: var(--col-white);
   color: var(--col-black);
