@@ -1,27 +1,27 @@
 {
-    "key": "group_663528d550825",
-    "title": "LC CTA",
+    "key": "group_lc_tidycal",
+    "title": "LC Tidycal",
     "fields": [
         {
-            "key": "field_663528d5d0780",
-            "label": "LC CTA",
+            "key": "field_lc_tidycal_title",
+            "label": "LC Tidycal",
             "name": "",
             "aria-label": "",
             "type": "message",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": false,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
             "message": "",
-            "new_lines": "wpautop",
-            "esc_html": 0
+            "esc_html": 0,
+            "new_lines": "wpautop"
         },
         {
-            "key": "field_663528e2d0781",
+            "key": "field_68615407f0cb0",
             "label": "Title",
             "name": "title",
             "aria-label": "",
@@ -36,12 +36,34 @@
             },
             "default_value": "Contact me today for more details",
             "maxlength": "",
+            "allow_in_bindings": 1,
             "placeholder": "",
             "prepend": "",
             "append": ""
         },
         {
-            "key": "field_66352a6d34a26",
+            "key": "field_686154ed03eca",
+            "label": "Before",
+            "name": "before",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6861540af0cb1",
             "label": "Section Background",
             "name": "background",
             "aria-label": "",
@@ -61,10 +83,11 @@
                 "teal-200",
                 "purple-200"
             ],
-            "return_format": "slug"
+            "return_format": "slug",
+            "allow_in_bindings": 1
         },
         {
-            "key": "field_66352a9403cce",
+            "key": "field_6861540ef0cb2",
             "label": "CTA Colour",
             "name": "cta_colour",
             "aria-label": "",
@@ -84,30 +107,11 @@
                 "teal-200",
                 "purple-200"
             ],
-            "return_format": "slug"
+            "return_format": "slug",
+            "allow_in_bindings": 1
         },
         {
-            "key": "field_669b91af230b1",
-            "label": "Subject",
-            "name": "subject",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "General Enquiry",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_6861271baab9a",
+            "key": "field_68615410f0cb3",
             "label": "After",
             "name": "after",
             "aria-label": "",
@@ -133,7 +137,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/lc-cta"
+                "value": "acf\/lc-tidycal"
             }
         ]
     ],
@@ -146,5 +150,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1751209004
+    "modified": 1751209209
 }
