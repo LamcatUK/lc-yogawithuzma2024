@@ -111,12 +111,15 @@ strong {
   max-width: 65ch;
 }
 
+.has-large-font-size,
 .fs-800 {
   font-size: var(--fs-800);
 }
+
 .fs-400 {
   font-size: var(--fs-400);
 }
+
 .has-medium-font-size,
 .fs-500 {
   font-size: var(--fs-500);
