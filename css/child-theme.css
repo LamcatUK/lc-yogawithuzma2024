@@ -22177,9 +22177,14 @@ strong {
   max-width: 65ch;
 }
 
-.has-large-font-size,
+.has-x-large-font-size,
 .fs-800 {
   font-size: var(--fs-800);
+}
+
+.has-large-font-size,
+.fs-700 {
+  font-size: var(--fs-700);
 }
 
 .fs-400 {
