@@ -40,6 +40,15 @@ switch ($colour) {
                 <?=contact_email()?>
             </div>
             <a href="/contact-me/?subject=<?=get_field('subject')?>" class="btn btn-primary">Get in touch</a>
+            <?php
+            if ( get_field( 'after' ) ) {
+                ?>
+            <div class="has-small-font-size pt-4">
+                <?= get_field( 'after' ); ?>
+            </div>
+                <?php
+            }
+            ?>
         </div>
 </section>
 <div class="buffer-bottom bg-<?=$bgcolour?>"></div>
