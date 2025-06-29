@@ -21,23 +21,36 @@ add_shortcode('contact_address', function () {
     return $output;
 });
 
-add_shortcode('contact_phone', 'contact_phone');
-function contact_phone()
-{
-    if (get_field('contact_phone', 'options')) {
-        return '<a href="tel:' . parse_phone(get_field('contact_phone', 'options')) . '">' . get_field('contact_phone', 'options') . '</a>';
+add_shortcode( 'contact_phone', 'contact_phone' );
+function contact_phone( $atts = array() ) {
+    $atts = shortcode_atts(
+        array(
+            'icon' => false,
+        ),
+        $atts
+    );
+
+    if ( get_field( 'contact_phone', 'options' ) ) {
+        $phone_number = get_field( 'contact_phone', 'options' );
+        $icon         = ( 'true' === $atts['icon'] ) ? '<i class="fa-solid fa-phone"></i> ' : '';
+        return '<a href="tel:' . parse_phone( $phone_number ) . '">' . $icon . $phone_number . '</a>';
     }
-    return;
 }
 
-add_shortcode('contact_email', 'contact_email');
+add_shortcode( 'contact_email', 'contact_email' );
+function contact_email( $atts = array() ) {
+    $atts = shortcode_atts(
+        array(
+            'icon' => false,
+        ),
+        $atts
+    );
 
-function contact_email()
-{
-    if (get_field('contact_email', 'options')) {
-        return '<a href="mailto:' . get_field('contact_email', 'options') . '">' . get_field('contact_email', 'options') . '</a>';
+    if ( get_field( 'contact_email', 'options' ) ) {
+        $email_address = get_field( 'contact_email', 'options' );
+        $icon          = ( 'true' === $atts['icon'] ) ? '<i class="fa-solid fa-envelope"></i> ' : '';
+        return '<a href="mailto:' . $email_address . '">' . $icon . $email_address . '</a>';
     }
-    return;
 }
 
 
