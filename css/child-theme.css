@@ -22279,11 +22279,13 @@ header.hidden #wrapper-navbar {
   top: -100px;
 }
 header.smaller .logo img {
-  width: 147px;
+  width: 130px;
 }
 header .logo img {
   transition: width var(--transition);
-  width: 200px;
+  width: 160px;
+  -webkit-margin-end: 1rem;
+  margin-inline-end: 1rem;
 }
 header #navbar {
   background-color: var(--col-white);
@@ -22296,7 +22298,7 @@ header #navbar li.nav-item {
 header #navbar a.nav-link {
   font-family: var(--ff-body);
   font-weight: var(--fw-500);
-  font-size: var(--fs-400);
+  font-size: var(--fs-350);
 }
 header .dropdown-menu li.nav-item a.dropdown-item {
   text-align: start;
