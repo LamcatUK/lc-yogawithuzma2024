@@ -22859,6 +22859,10 @@ blockquote p {
   font-size: var(--fs-300);
 }
 
+.latest_posts .swiper-slide {
+  height: auto;
+  display: flex;
+}
 .latest_posts__swiper {
   overflow: hidden;
   padding-block: 0.5rem;
@@ -22873,6 +22877,7 @@ blockquote p {
   height: 100%;
   color: var(--col-black);
   transition: color var(--transition);
+  text-decoration: none;
 }
 .latest_posts__card:hover {
   color: var(--col-purple-400);
@@ -22880,12 +22885,16 @@ blockquote p {
 .latest_posts__card:hover .latest_posts__image {
   transform: scale(1.05);
 }
+.latest_posts__image-wrap {
+  overflow: hidden;
+}
 .latest_posts__image {
   aspect-ratio: 16/9;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   transition: transform 300ms ease;
+  display: block;
 }
 .latest_posts__body {
   padding: 1rem;

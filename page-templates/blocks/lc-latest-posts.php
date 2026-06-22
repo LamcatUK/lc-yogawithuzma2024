@@ -24,7 +24,9 @@ $q = new WP_Query(array(
                     <div class="swiper-slide">
                         <a href="<?= get_the_permalink() ?>" class="latest_posts__card">
                             <?php if ($img) { ?>
-                                <img src="<?= esc_url($img) ?>" alt="<?= esc_attr(get_the_title()) ?>" class="latest_posts__image" loading="lazy">
+                                <div class="latest_posts__image-wrap">
+                                    <img src="<?= esc_url($img) ?>" alt="<?= esc_attr(get_the_title()) ?>" class="latest_posts__image" loading="lazy">
+                                </div>
                             <?php } ?>
                             <div class="latest_posts__body">
                                 <div class="latest_posts__date"><?= get_the_date('j M Y') ?></div>

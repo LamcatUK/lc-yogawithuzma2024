@@ -1,4 +1,9 @@
 .latest_posts {
+    .swiper-slide {
+        height: auto;
+        display: flex;
+    }
+
     &__swiper {
         overflow: hidden;
         padding-block: 0.5rem;
@@ -14,6 +19,7 @@
         height: 100%;
         color: var(--col-black);
         transition: color var(--transition);
+        text-decoration: none;
         &:hover {
             color: var(--col-purple-400);
             .latest_posts__image {
@@ -22,11 +28,16 @@
         }
     }
 
+    &__image-wrap {
+        overflow: hidden;
+    }
+
     &__image {
         aspect-ratio: 16 / 9;
         width: 100%;
         object-fit: cover;
         transition: transform 300ms ease;
+        display: block;
     }
 
     &__body {
