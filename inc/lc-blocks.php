@@ -7,6 +7,23 @@ function acf_blocks()
 
         acf_register_block_type(
             array(
+                'name'            => 'lc_latest_posts',
+                'title'           => __( 'LC Latest Posts' ),
+                'category'        => 'layout',
+                'icon'            => 'cover-image',
+                'render_template' => 'page-templates/blocks/lc-latest-posts.php',
+                'mode'            => 'edit',
+                'supports'        => array(
+                    'mode'      => false,
+                    'anchor'    => true,
+                    'className' => true,
+                    'align'     => true,
+                ),
+            )
+        );
+
+        acf_register_block_type(
+            array(
                 'name'            => 'lc_tidycal',
                 'title'           => __( 'LC Tidycal' ),
                 'category'        => 'layout',
