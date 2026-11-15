@@ -164,6 +164,20 @@ if (is_admin()) {
     add_action('enqueue_block_editor_assets', 'lc_disable_editor_fullscreen_by_default');
 }
 
+// Work around ACF 6.8 modal opening empty when "Edit Block" is clicked on an unselected block.
+function lc_enqueue_acf_select_block_fix()
+{
+    $path = get_stylesheet_directory() . '/js/editor-acf-select-block.js';
+    wp_enqueue_script(
+        'lc-editor-acf-select-block',
+        get_stylesheet_directory_uri() . '/js/editor-acf-select-block.js',
+        array('wp-data', 'wp-dom-ready'),
+        file_exists($path) ? filemtime($path) : null,
+        true
+    );
+}
+add_action('enqueue_block_editor_assets', 'lc_enqueue_acf_select_block_fix');
+
 function get_the_top_ancestor_id()
 {
     global $post;
@@ -311,7 +325,10 @@ function disable_pre_publish_checks()
 <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function() {
         wp.domReady(function() {
-            wp.data.dispatch('core/editor').disablePrePublishChecks();
+            var editor = wp.data.dispatch('core/editor');
+            if (editor && typeof editor.disablePrePublishChecks === 'function') {
+                editor.disablePrePublishChecks();
+            }
         });
     });
 </script>
