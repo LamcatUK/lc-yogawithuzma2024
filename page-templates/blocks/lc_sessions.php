@@ -10,6 +10,9 @@
             while (have_rows('sessions')) {
                 the_row();
                 $l = get_sub_field('link');
+                if (! is_array($l) || empty($l['url'])) {
+                    continue;
+                }
                 $imgID = get_sub_field('image') ?? null;
                 if ($imgID) {
                     $img = wp_get_attachment_image($imgID, 'full', false, array( 'class' => 'sessions__image' ));
@@ -19,10 +22,10 @@
                 ?>
             <div class="col-md-6 col-xl-3 mb-4">
                 <a class="sessions__card shadow-1"
-                    href="<?=$l['url']?>">
+                    href="<?=esc_url($l['url'])?>">
                     <?=$img?>
                     <div class="sessions__title shadow-1">
-                        <?=$l['title']?>
+                        <?=esc_html($l['title'] ?? '')?>
                     </div>
                 </a>
             </div>

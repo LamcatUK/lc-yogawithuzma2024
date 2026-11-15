@@ -55,6 +55,7 @@ $q = new WP_Query( $args );
                 <?php
                     $a = '';
                 }
+                wp_reset_postdata();
                 ?>
             </div>
         </div>

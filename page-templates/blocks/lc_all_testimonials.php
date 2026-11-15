@@ -1,7 +1,7 @@
 <?php
-$class = $block['className'] ?: 'py-5';
+$class = ( $block['className'] ?? '' ) ?: 'py-5';
 ?>
-<section class="all_testimonials <?=$class?>">
+<section class="all_testimonials <?=esc_attr($class)?>">
     <div class="container-xl">
         <?php
         $q = new WP_Query(array(

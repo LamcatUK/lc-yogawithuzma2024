@@ -7,7 +7,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-$block_id = $block['anchor'];
+$block_id = $block['anchor'] ?? '';
 ?>
 <aside class="separator py-5" id="<?= esc_attr( $block_id ); ?>">
 	<div class="container-xl text-center">
